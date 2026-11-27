@@ -1,0 +1,7 @@
+main.txt
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.tfstate.lock.info
+crash.log
+IP.txt
