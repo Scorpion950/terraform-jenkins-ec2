@@ -7,6 +7,6 @@ resource "aws_instance" "my_ec2" {
   }
 
   provisioner "local-exec" {
-    command = "echo Public IP: ${self.public_ip} > IP.txt & echo Private IP: ${self.private_ip} >> IP.txt"
+    command = "echo Public IP: ${self.public_ip} > IP.txt && echo Private IP: ${self.private_ip} >> IP.txt"
   }
 }
